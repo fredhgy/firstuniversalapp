@@ -1,0 +1,10 @@
+/out:"G:\OneDrive\Projects\UniversalApp\UniversalApp\obj\ARM\Release\ilc\intermediate\SgGenerated\\"
+/int:"G:\OneDrive\Projects\UniversalApp\UniversalApp\obj\ARM\Release\ilc\intermediate\\"
+/ref:"G:\OneDrive\Projects\UniversalApp\UniversalApp\obj\ARM\Release\ilc\intermediate\PreMergeILTransformed\\"
+/ref:"G:\OneDrive\Projects\UniversalApp\UniversalApp\obj\ARM\Release\ilc\intermediate\TransformedSRWR\\"
+/ref:"G:\OneDrive\Projects\UniversalApp\UniversalApp\obj\ARM\Release\ilc\in\\"
+/ref:"G:\OneDrive\Projects\UniversalApp\UniversalApp\obj\ARM\Release\ilc\in\\"
+/ref:"G:\OneDrive\Projects\UniversalApp\UniversalApp\obj\ARM\Release\ilc\in\\"
+/ref:"C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\ARM\ilc\lib\Private\\"
+/ref:"G:\OneDrive\Projects\UniversalApp\UniversalApp\obj\ARM\Release\ilc\in\WinMetadata\\"
+/ca:System.Private.CoreLib
