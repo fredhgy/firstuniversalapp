@@ -20,19 +20,35 @@ namespace UniversalApp
     /// <summary>
     /// 提供特定于应用程序的行为，以补充默认的应用程序类。
     /// </summary>
-    sealed partial class App : Application
+    sealed partial class Application : Windows.UI.Xaml.Application
     {
         /// <summary>
         /// 初始化单一实例应用程序对象。这是执行的创作代码的第一行，
         /// 已执行，逻辑上等同于 main() 或 WinMain()。
         /// </summary>
-        public App()
+        public Application()
         {
             Microsoft.ApplicationInsights.WindowsAppInitializer.InitializeAsync(
                 Microsoft.ApplicationInsights.WindowsCollectors.Metadata |
                 Microsoft.ApplicationInsights.WindowsCollectors.Session);
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            if (Windows.Foundation.Metadata.ApiInformation.IsTypePresent("Windows.Phone.UI.Input.HardwareButtons"))
+            {
+                Windows.Phone.UI.Input.HardwareButtons.BackPressed += (s, e) =>
+                {
+                    Frame frame = Window.Current.Content as Frame;
+                    if(frame == null)
+                    {
+                        return;
+                    }
+                    if(frame.CanGoBack)
+                    {
+                        frame.GoBack();
+                        e.Handled = true;
+                    }
+                };
+            }
         }
 
         /// <summary>

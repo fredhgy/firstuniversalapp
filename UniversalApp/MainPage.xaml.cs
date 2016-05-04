@@ -27,9 +27,41 @@ namespace UniversalApp
             this.InitializeComponent();
         }
 
-        private void textBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        String Text = "hello windows";
+        String Hgy = "软件作者：何广宇";
+       
+        private void a_Checked(object sender, RoutedEventArgs e)
+        {
+            if (a.IsChecked == true)
+                answer.Text = Text;
+        }
+
+        private void button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(BlankPage1));
+        }
+
+        private void button1_Click_1(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Exit();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            example.Text = Hgy;
+            
+        }
+
+        private void answer_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
         }
+
+        private void textBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        
     }
 }

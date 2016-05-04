@@ -8,7 +8,11 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Text="你好 Windows 10" VerticalAlignment="Center"/>
-
+        <RadioButton  Content="RadioButton" HorizontalAlignment="Left" VerticalAlignment="Top" Name="a" Checked="a_Checked"/>
+        <TextBlock x:Name="answer" HorizontalAlignment="Left" Height="476" Margin="0,122,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="432" SelectionChanged="answer_SelectionChanged"/>
+        <TextBlock x:Name="example" HorizontalAlignment="Left" Margin="266,6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="textBlock_SelectionChanged"/>
+        <Button x:Name="button" Content="页面" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Bottom" Width="82" Click="button_Click_1"/>
+        <Button x:Name="button2" Content="作者" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Bottom" Click="button2_Click" ClickMode="Hover"/>
+        <Button x:Name="button1" Content="退出" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Bottom" Click="button1_Click_1"/>
     </Grid>
 </Page>
