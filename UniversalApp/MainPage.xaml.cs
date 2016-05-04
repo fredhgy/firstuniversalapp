@@ -30,10 +30,16 @@ namespace UniversalApp
         String Text = "hello windows";
         String Hgy = "软件作者：何广宇";
        
-        private void a_Checked(object sender, RoutedEventArgs e)
+        private void RadioButton_Click(object sender, RoutedEventArgs e)
         {
             if (a.IsChecked == true)
                 answer.Text = Text;
+            else if (b.IsChecked == true)
+                answer.Text = "123";
+            else if (c.IsChecked == true)
+                answer.Text = "456";
+            else if (d.IsChecked == true)
+                answer.Text = "789";
         }
 
         private void button_Click_1(object sender, RoutedEventArgs e)

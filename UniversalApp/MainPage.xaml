@@ -8,11 +8,14 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <RadioButton  Content="RadioButton" HorizontalAlignment="Left" VerticalAlignment="Top" Name="a" Checked="a_Checked"/>
+        <RadioButton  Content="text1"  HorizontalAlignment="Left" VerticalAlignment="Top" Name="a" Click="RadioButton_Click"/>
         <TextBlock x:Name="answer" HorizontalAlignment="Left" Height="476" Margin="0,122,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="432" SelectionChanged="answer_SelectionChanged"/>
-        <TextBlock x:Name="example" HorizontalAlignment="Left" Margin="266,6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="textBlock_SelectionChanged"/>
-        <Button x:Name="button" Content="页面" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Bottom" Width="82" Click="button_Click_1"/>
-        <Button x:Name="button2" Content="作者" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Bottom" Click="button2_Click" ClickMode="Hover"/>
-        <Button x:Name="button1" Content="退出" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Bottom" Click="button1_Click_1"/>
+        <TextBlock x:Name="example" HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="textBlock_SelectionChanged"/>
+        <Button x:Name="button" Content="页面" Style="{StaticResource TextBlockButtonStyle}" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Bottom" Width="82" Click="button_Click_1"/>
+        <Button x:Name="button2" Content="作者" Style="{StaticResource TextBlockButtonStyle}" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Bottom" Click="button2_Click" ClickMode="Hover"/>
+        <Button x:Name="button1" Content="退出" Style="{StaticResource TextBlockButtonStyle}" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Bottom" Click="button1_Click_1"/>
+        <RadioButton  Content="text2" HorizontalAlignment="Left" Margin="0,31,0,0" VerticalAlignment="Top" Name="b" Click="RadioButton_Click"/>
+        <RadioButton  Content="text3" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" Name="c" Click="RadioButton_Click"/>
+        <RadioButton  Content="text4" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" Name="d" Click="RadioButton_Click"/>
     </Grid>
 </Page>
